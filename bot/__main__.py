@@ -144,7 +144,7 @@ async def ping(_, message):
 async def log(_, message):
     await send_file(
         message,
-        "Zee_Logs.txt"
+        "Logs.txt"
     )
 
 
@@ -265,7 +265,7 @@ async def restart_notification():
                     else "Bot Restarted!"
                 )
                 for tag, links in data.items():
-                    msg += f"\n\n👤 {tag} Do your tasks again. \n"
+                    msg += f"\n\n👤 {tag} Bruh Files gone.Do the task Again <3!. \n"
                     for index, link in enumerate(
                         links,
                         start=1
