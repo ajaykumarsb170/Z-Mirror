@@ -257,10 +257,8 @@ async def get_readable_message(
                 else f"\n<b>#Zee{index + start_position}...(Processing)</b>"
             )
         else:
-            msg += (
-                f"<b><i>\n#Zee{index + start_position}: "
-                f"{escape(f"{task.name()}")}\n</i></b>"
-            )
+            msg += f"<b>{index + start_position}.{tstatus}: </b>"
+        msg += f"<code>{escape(f'{task.name()}')}</code>"
         if tstatus not in [
             MirrorStatus.STATUS_SEEDING,
             MirrorStatus.STATUS_QUEUEDL,
